@@ -14,3 +14,11 @@ This repository contains the code for a music player website developed using HTM
 - HTML5
 - CSS3 (with Flexbox/Grid for layout)
 - JavaScript (ES6)
+
+## Demo
+
+Check out the live demo [here]
+## Screenshots
+
+![Screenshot 1](/screenshots/screenshot1.png)
+![Screenshot 2](/screenshots/screenshot2.png)
