@@ -17,8 +17,8 @@ This repository contains the code for a music player website developed using HTM
 
 ## Demo
 
-Check out the live demo [here]
+Check out the live demo [here] https://andnaaz.github.io/Music--Player/
 ## Screenshots
 
-![Screenshot 1](/screenshots/screenshot1.png)
-![Screenshot 2](/screenshots/screenshot2.png)
+![Screenshot 2024-07-12 165310](https://github.com/user-attachments/assets/bea2afe0-3b0a-4636-84e7-c81c88baddaf)
+
