@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music-Player-Website</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="media/logo.png" class="logo">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="about.html"target="_blank">ABOUT</a></li>
+                <li><a href="#">SPECIFICATION</a></li>
+                <li><a href="playlist.html" target="_blank">PLAYLIST</a></li>
+                <li><a href="form.html" target="_blank">CONNECT</a></li>
+
+            </ul>
+        </div>
+        <div class="content"></div>
+        <div class="left-col">
+            <h1>THE<br>REAL<br>SOUND</h1>
+        </div>
+        <div class="right-col">
+        <p>
+            Click Here To listen
+        </p>
+        <img src="media/play.png" id="icon">
+    </div>
+    </div>
+    </div>
+    <audio id="mysong">
+        <source src="media\Aa Milay Ho Yunhi - From _Yunhi_.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        var mysong = document.getElementById("mysong");
+        var icon = document.getElementById("icon");
+        icon.onclick=function(){
+            if(mysong.paused){
+                mysong.play();
+                icon.src = "media/pause.png";
+            }
+            else{
+                mysong.pause();
+                icon.src = "media/play.png";
+            }
+            
+        }
+        
+    </script>
+    
+    
+</body>
+
+</html>

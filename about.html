@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Music Player Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url('media/image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+        .container {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+        .left-column {
+            flex: 1; /* Take up remaining space */
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .center-column {
+            flex: 1; /* Take up remaining space */
+            text-align: center;
+        }
+        
+        .social-links {
+            margin-top: auto; /* Pushes social links to the bottom */
+            text-align: left;
+        }
+
+        .about-me {
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        .left-column h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .left-column p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #555;
+        }
+        .left-column img{
+            width: 50%; /* Adjust percentage as needed */
+            height: auto;
+
+        }
+        .social-links a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: #2980b9;
+        }
+
+        .artist-info ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-top: 10px;
+            text-align: left;
+        }
+        .artist-info ul li {
+            margin-bottom: 20px;
+            text-align: left;
+            display: flex;
+    flex-direction: column;
+    align-items: center;
+        }
+
+        .artist-info ul li img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .artist-info ul li h3 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .artist-info ul li p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+            text-align: center;
+        }
+        .highlight {
+    background-color:lawngreen;
+}
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-weight: bold;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-column">
+            <h2>About Me</h2><br>
+            <img src="media\himanee_1.jpg">
+            <p>Hey there! I'm  <span class="highlight bold">Himanee</span>, and music is my escape and my comfort.
+                You know that feeling when a perfect song comes on and suddenly the world feels a little brighter? That's what I'm all about. Music isn't just a hobby for me—it's my stress-buster, my companion when I'm feeling alone, and my window to cultures around the world.
+                One of my favorite things? Diving into songs in languages I don't understand. There's something magical about connecting with a melody and emotion even when the words are a mystery. It's like a secret conversation between the artist and my soul.
+                Want to get to know me better? Check out my YouTube playlist! It's a mix of everything that makes me, well, me. From upbeat tunes that get me dancing to soulful melodies that speak to my heart, this playlist is basically the soundtrack to my life.
+                I'm always on the lookout for new music and new friends who share my passion. So give my playlist a listen, and let's chat about your favorites. Who knows? We might just become music buddies!
+                Looking forward to sharing this musical journey with you!</p>
+            
+            
+            <div class="social-links">
+                
+                
+                <h3>Follow My Youtube Playlist</h3><br><a href="https://music.youtube.com/playlist?list=PLokSnaxgiJE9YYPyUDhnYnY-HKSVbVigE&si=Fykah26GZh6d9Cbh" target="_blank">YouTube</a><br><br>
+                <h3>Follow Only If we know Each Other</h3><br>
+                <a href="https://www.instagram.com/himanee_11/?hl=en" target="_blank">Instagram</a>
+                <!-- Add more social links if necessary -->
+            </div>
+        </div>
+
+        <div class="center-column">
+            <h2>My Favorite Artist</h2>
+            <div class="artist-info">
+                <ul>
+                    <li><img src="media\arijitsingh.jpeg" ><h3><span class="highlight bold">Arijit Singh:</span></h3>
+                        The guy can sing anything! High notes, low notes, you name it.
+                        When he sings, you feel it in your soul. It's like he's telling your life story.
+                        Whether you're falling in love or nursing a broken heart, Arijit's got a song for that.</li>
+                    <li><img src="media\Rahat fateh ali khan.jpg" ><h3><span class="highlight bold">Rahat Fateh Ali Khan:</span></h3>
+                        His voice has this raw power that hits you right in the feels.
+                        When he sings those soulful ghazals, it's like time stops.
+                        The man can make you cry with just one high note. It's intense!</li>
+                    <li><img src="media\shreya ghoshal.jpg"><h3><span class="highlight bold">Shreya Ghoshal:</span></h3>
+                        Her voice is like crystal - so clear you could probably see your reflection in it.
+                        She's a linguistic genius!Whether it's a classical raga or the latest pop hit, Shreya nails it every time.</li>
+                    <li><img src="media\bts.jpeg"><h3><span class="highlight bold">BTS:</span></h3>
+                        OMG, where do I even start with BTS? These seven incredibly talented guys from South Korea have totally stolen my heart!💜
+                        Whether it's a hard-hitting rap or a soul-touching ballad, they nail it every single time.
+                        Stan BTS for clear skin and a better life, y'all! Borahae!💜
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

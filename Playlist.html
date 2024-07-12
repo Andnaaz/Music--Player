@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Playlist</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('media/image.png'); /* Update the path to your background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-image: url('media/image.png'); /* Update the path to your background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;  /* Slightly transparent background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .song-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .song-list li {
+            margin: 10px 0;
+            padding: 10px;
+            background: paleturquoise;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .song-list li:hover {
+            background: pink
+        }
+
+        audio {
+            margin-top: 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Playlist</h1>
+        <ul class="song-list">
+            <li data-src="media\Aa Milay Ho Yunhi - From _Yunhi_.mp3">Aa Milay Ho Yunhi</li>
+            <li data-src="media\Acha Lagta Hai Tu Ehraam-E-Junoon (Original Score).mp3">Acha Lagta Hai Tu Ehraam-E-Junoon /li>
+            <li data-src="media\Aitebaar.mp3">Aitebaar</li>
+            <li data-src="media\Angna (Original Score).mp3">Angna </li>
+            <li data-src="media\Ankhain - Original Soundtrack From _Kabli Pulao_.mp3">Ankhain</li>
+            <li data-src="media/Aulaad - (Original Motion Picture Soundtrack).mp3">Aulaad</li>
+            <li data-src="media\Aye Musht-E-Khaak (Original Score).mp3">Aye Musht-E-Khaak</li>
+            <li data-src="media\Baazi.mp3">Baazi</li>
+            <li data-src="media\Bad'dua (Original Score).mp3">Bad'dua</li>
+            <li data-src="media\Badshah Begum - Original Soundtrack.mp3">Badshah Begum/li>
+            <!-- Add more songs as needed -->
+        </ul>
+        <audio id="audio-player" controls>
+            <source id="audio-source" src="" type="audio/mp3">
+        </audio>
+    </div>
+
+    <script>
+        const audioPlayer = document.getElementById('audio-player');
+        const audioSource = document.getElementById('audio-source');
+        const songList = document.querySelectorAll('.song-list li');
+
+        songList.forEach(song => {
+            song.addEventListener('click', function () {
+                audioSource.src = this.getAttribute('data-src');
+                audioPlayer.load();
+                audioPlayer.play();
+            });
+        });
+    </script>
+</body>
+
+</html>
